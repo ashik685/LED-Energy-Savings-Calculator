@@ -1,0 +1,121 @@
+@media only screen and (min-width: 600px) and (max-width: 768px){
+.contenerMain article h1{
+font-size:37px;
+}
+}
+@media only screen and (max-width: 480px){
+.container iframe {
+min-height: 4100px !important;
+}
+.contenerMain article h1{
+font-size:32px;
+}
+article table{
+width:100%;
+}
+.contenerMain article{
+padding:0px;
+}
+.topBox {
+font-size: 20px;
+line-height: 26px;
+width: 96%;
+}
+.content .container .container_inner {
+width: 95% !important;
+padding: 5px !important;
+}
+header article .topHd {
+font-size: 30px !important;
+}
+.heading {
+font-size: 16px;
+padding: 10;
+text-align: center;
+}
+ul.coloured-line {
+float: left;
+width: 100%;
+}
+ul.coloured-line li {
+float: left;
+width: 32%;
+}
+.simple ul {
+float: left;
+width: 100%;
+}
+.simple ul li {
+float: left;
+width: 50%;
+}
+.secondlast ul {
+float: left;
+width: 100%;
+}
+.secondlast ul li {
+float: left;
+width: 50%;
+}
+.contenerMain .gallery ul li img {
+height: auto;
+width: 100%;
+}
+.contenerMain .gallery ul li {
+width: 94%;
+margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width:600px){
+.topBox{
+width: 86%;
+}
+h1{
+font-size:38px;
+}
+.contenerMain article{
+margin: 0px 0 0px; 
+padding: 0px 0px; 
+text-align: center;
+}
+ul.coloured-line {
+float: left;
+width: 85%;
+padding: 40px;
+}
+ul.coloured-line li {
+width: 138px;
+}
+.simple ul li {
+width: 170px;
+}
+}
+
+@media only screen and (max-width: 480px){
+
+ul.coloured-line {
+padding: 32px;
+}
+}
+
+@media only screen and (max-width: 1000px){
+.contenerMain article{
+padding:20px 20px;
+}
+.table-div {
+text-align: center;
+}
+.simple ul li {
+width: 220px;
+}
+.savings ul li {
+width: 172px;
+}
+.secondlast ul li {
+width: 220px;
+}
+.contenerMain .gallery ul li {
+margin: 0 28;
+}
+}

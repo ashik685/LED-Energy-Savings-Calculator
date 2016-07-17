@@ -1,0 +1,268 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Welcome</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/form-responsive.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js" language="javascript"></script>
+<script type="text/javascript" src="js/calculator.js" language="javascript"></script>
+</head>
+<body>
+<div class="main">
+  <!--header start-->
+  <header>
+     <article>
+      <h1 class="topHd">LED Energy Savings Calculator</h1>
+    </article>
+    <article>
+      <div class="topBox">Use this calculator to determine your Power Consumption and Financial Savings changing from traditional bulbs to LED bulbs</div>
+    </article>
+  </header>
+  <style>
+span{font-weight:bold; font-size:2em; float:right; margin-right:5px;}
+.heading{font-weight:bold; color:#FF0000;}
+.bgRed{background:#FF0000; color:#FFFFFF; font-weight:bold;}
+</style>
+  <!--header close-->
+  <!--contener start-->
+  <div class="contenerMain">
+    <!--box start-->
+    <article>
+        <h1>POWER CONSUMPTION SAVINGS</h1>
+        <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading">1. First, let's calculate how much LESS power you will use if you switch<br>to our energy-saving LED bulbs compared to your current bulbs:</li>
+          </ul>
+          <ul class="coloured-line">
+            <li>
+			<p>Your current Bulb Wattage</p>
+			<em><input type="text" name="original_lamp_wattage" id="original_lamp_wattage" value="75" >
+            watts</em><span>-</span>
+			</li>
+            <li>
+			<p>Our LED Bulb Wattage</p>
+			<em><input type="text" name="replacement_lamp_wattage" id="replacement_lamp_wattage" value="9">
+            watts</em><span>=</span>
+			</li>
+            <li>
+			<p>Watts Saved / Bulb</p>
+			<em><input type="text" name="watt_saved_per_lamp" id="watt_saved_per_lamp" value="66" readonly="readonly">
+            watts</em><span>x</span>
+			</li>
+            <li>
+			<p>Number of Bulbs in your building</p>
+			<em><input type="text" name="of_lamps_to_replace" id="of_lamps_to_replace" value="100">
+			Bulbs</em><span>=</span>
+			</li>
+            <li>
+			<p>Total Watts Saved switching to LED Bulbs!</p>
+			<em><input type="text" name="total_watt_saved" id="total_watt_saved" value="6600" readonly="readonly">
+			watts</em><span>=</span>
+			</li>
+            <li>
+			<p>Total Kilowatts Saved (kW)</p>
+			<em><input type="text" name="total_kiowatt_save" id="total_kiowatt_save" value="6.6" class="bgRed" readonly="readonly"></em>
+			</li>
+          </ul>
+          </div>
+        <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading">2. Now, let's see exactly how much LESS power your premises will use EACH,<br>AND EVERY YEAR, by changing to LED bulbs: </li>
+          </ul>                        
+              <ul class="coloured-line">
+                <li>
+				<p>Total Kilowatts Saved</p>
+                <em><input type="text" name="total_kiowatt_saves" id="total_kiowatt_saves" value="6.6" readonly="readonly">
+                  kW</em><span>x</span>				
+				</li>
+                <li>
+				<p># of Hours / Day</p>
+				<em><input type="text" name="hour_use_per_day" id="hour_use_per_day" value="16" >
+                  Hrs / Day</em><span>x</span>
+				</li>
+                <li>
+				<p># of Days / Week</p>
+				<em><input type="text" name="day_of_use_per_week" id="day_of_use_per_week" value="6">
+                 Days / Wk</em><span>x</span>
+				</li>
+                <li>
+				<p># of Weeks / Year</p>
+				<em><input type="text" name="week_of_use_per_year" id="week_of_use_per_year" value="52">
+                  wks / Year</em><span>=</span>
+				</li>
+                <li>
+				<p>Total kWh Saved per Year</p> 
+				<em><input type="text" name="total_kilowatt_save_per_year" id="total_kilowatt_save_per_year" value="32947.20" class="bgRed" readonly="readonly">
+                  kWh / Year</em>
+				</li>
+              </ul>
+			  </div>
+        <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading">3. Now - most importantly - lets discover HOW MUCH MONEY LESS<br>your power bills will be by switching to LED lighting: </li>
+          </ul>
+          <ul class="coloured-line">
+	      	  <li>
+			  <p>Total kWh Saved / Year</p>
+              <em><input type="text" name="total_kilowatt_save_per_years" id="total_kilowatt_save_per_years" value="32947.20"readonly="readonly">
+               kWh / Year</em><span>x</span>			  
+			  </li>
+              <li>
+			  <p>Your Energy Cost / kWh (Based on your current power bill)</p>
+              <em><input type="text" name="energy_cost_per_kilowatt" id="energy_cost_per_kilowatt" value=".38">
+              Dollars</em><span>=</span>			  
+			  </li>
+              <li>
+			  <p>How much less you will pay for power using LED Bulb per Year</p>
+               <em>$<input type="text" name="total_energy_cost_save_per_year" id="total_energy_cost_save_per_year" value="12519.94" class="bgRed" readonly="readonly"> per Year</em>			  
+			  </li>
+            
+          </ul>
+            </div>  
+        </table>       
+    </article>
+    <!--box close-->
+    <!--box start-->
+	
+    <article>
+      <h1>BULB COST SAVINGS</h1>	
+        <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading">LED bulbs cost more than traditional bulbs when you buy them, but because they last much longer,<br>they end up costing you less!  Let's calculate how much you will save in bulb costs by using LED bulbs:</li>
+          </ul>
+        <div class="table-div savings">
+        <ul>  
+		  <li>
+		  <li>LED Bulb lifespan (hrs)</li>
+          <li><input type="text" name="led_life_span" id="led_life_span" value="50000" style="width:80px; height:30px;"></li>
+          <li>Your Yearly number of hours of Usage</li>
+        </ul>
+		</div>
+		<div class="table-div simple">
+        <ul>
+          <li>Current Bulb lifespan (hrs)</li>
+          <li><input type="text" name="original_bulb_life_span" id="original_bulb_life_span" value="2000" ></li>
+          <li><input type="text" name="your_early_usage" id="your_early_usage" value="4992" style="width:80px; height:30px;" class="bgRed" readonly="readonly">
+          Hrs/Year</li>
+        </ul>
+		</div>
+		<div class="table-div savings">
+        <ul>  
+		  <li>
+		  <p>&nbsp;</p>
+		  <p>Cost of our LED Bulb</p>
+		  <p>Cost of your current Bulb</p>
+		  </li>
+          <li>
+		  <p>Price per bulb</p>
+		  <p>$<input type="text" name="cost_of_led_bulb" id="cost_of_led_bulb" value="12"><span>x</span></p>
+		  <p>$<input type="text" name="Cost_of_Original_Bulbs"  id="Cost_of_Original_Bulbs" value="1"><span>x</span></p>
+		  </li>
+          <li>
+		  <p># Bulbs the next 10 yrs<p>
+		  <p><input type="text" name="no_of_led_bulb_for_ten_year" id="no_of_led_bulb_for_ten_year" value="0.9984" readonly="readonly"><span>x</span></p>
+		  <p><input type="text" name="no_of_Original_Bulbs_bulb_for_ten_year" id="no_of_Original_Bulbs_bulb_for_ten_year" value="24.96" readonly="readonly"><span>=</span></p>
+		  </li>		  
+          <li>
+		  <p># of Bulbs you use<p>
+		  <p><input type="text" name="no_of_bulb" id="no_of_bulb" value="100" readonly="readonly"><span>=</span></p>
+		  <p><input type="text" name="no_of_bulb" id="no_of_bulb" value="100" readonly="readonly"><span>=</span></p>
+		  </li>		  
+          <li>
+		  <p>Bulb Cost 10 yrs</p>
+		  <p>$<input type="text" name="cost_of_led_bulb_for_ten_year" id="cost_of_led_bulb_for_ten_year" value="1198.08" class="bgRed" readonly="readonly"></p>
+		  <p>$<input type="text" name="cost_of_original_bulb_for_ten_year" id="cost_of_original_bulb_for_ten_year" value="2496.00" class="bgRed" readonly="readonly"></p>
+		  </li>
+        </ul>
+		 <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading">DID YOU KNOW: LED bulbs don't stop working once they are ready to be replaced, they just gradually get dimmer.</li>
+          </ul>
+		</div>
+	    </table>
+    </article>
+	
+    <article>
+      <h1>YOUR TOTAL SAVINGS</h1>
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div secondlast">
+          <ul>
+            <li>
+			<p>How soon will they will pay for themselves in energy savings alone?<span>=</span></p>
+			<p>&nbsp;</p>
+			</li>
+			
+            <li>
+			<p>Initial Cost of Lighting Upgrade</p>
+			<p>Total Energy Cost Savings per Year</p>
+			</li>
+			
+            <li>
+			<p>$<input type="text" name="Initial_Cost_of_Lighting_Upgrade" id="Initial_Cost_of_Lighting_Upgrade" value="1200" readonly="readonly"><span>=</span></p>
+			<p>$<input type="text" name="total_energy_cost_saving_per_year" id="total_energy_cost_saving_per_year" value="12649.73" style="width:80px; height:30px;" class="bgRed" readonly="readonly"><span>=</span></p>
+			</li>
+			
+            <li>
+			<p>Your LED purchase will have paid for itself in energy savings alone in</p>
+			<p><input type="text" name="return_on_investment" id="return_on_investment" value="0.09" class="bgRed" readonly="readonly">years</p>
+			</li>
+          </ul>
+		  </div>
+		  <div class="table-div secondlast">
+          <ul>
+            <li>
+			<p>Your OVERALL Savings / Year<span>=</span></p>
+			<p>&nbsp;</p>
+			</li>
+			
+            <li>
+			<p>Energy Usage Savings</p>
+			<p>Bulb Cost Savings / YR (yearly average)</p>
+			</li>
+			
+            <li>
+			<p>$<input type="text" name="saving_form_usage" id="saving_form_usage" value="12519.94" style="width:80px; height:30px;" readonly="readonly" class="bgRed"></p>
+			<p>$<input type="text" name="saving_from_per_bulb_cost_per_year" id="saving_from_per_bulb_cost_per_year" value="129.79" readonly="readonly"  class="bgRed"></p>
+			</li>
+			
+            <li>
+			<p class="over">Your Yearly Saving <br><label style="font-size:1.5em;">=</label> $<input type="text" name="yearly_saving" id="yearly_saving" value="12649.73" class="bgRed extra" readonly="readonly"></p>
+			</li>
+			</ul>
+			 <table class="auto" width="100%" border="0" cellspacing="2" cellpadding="2">
+		<div class="table-div">
+          <ul class="ul-red-line">
+            <li class="heading"">DID YOU KNOW: LED bulbs don't stop working once they are ready to be replaced, they just gradually get dimmer.</li>
+          </ul>
+		  </div>
+        </table>
+    </article>
+    <article class="gallery">
+      <div style="position:relative;">
+	  <ul>
+        <li><img src="images/rod.png" border="0"></li>
+        <li><img src="images/bulb.png" border="0"></li>
+        <li><img src="images/cfl.png" border="0"></li>
+        <li><img src="images/bulb-2.png" border="0"></li>
+		<li><img src="images/dollar-bulb.jpg" border="0"></li>
+        <div class="clear"></div>
+      </ul>
+	  </div>
+    </article>
+	<div style="height:150px;"></div>
+    <!--photo gallery close-->
+  </div>
+  <!--contener close-->
+  <!--footer start-->
+  <footer></footer>
+  <!--footer close-->
+</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Welcome</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js" language="javascript"></script>
+<script type="text/javascript" src="js/calculator.js" language="javascript"></script>
+</head>
+<body>
+<div class="main">
+  <!--header start-->
+  <header>
+    <article><a href="#"><img src="images/logo.png" border="0" width="35%"></a></article>
+    <article>
+      <h1 class="topHd">LED Energy Savings Calculator</h1>
+    </article>
+    <article>
+      <div class="topBox">Use this calculator to determine your Annual Energy
+        Cost Savings resulting from changing to LED lights</div>
+    </article>
+  </header>
+  <style>
+span{font-weight:bold; font-size:2em; float:right; margin-right:5px;}
+.heading{font-weight:bold; color:#FF0000;}
+.bgRed{background:#FF0000; color:#FFFFFF; font-weight:bold;}
+</style>
+  <!--header close-->
+  <!--contener start-->
+  <div class="contenerMain">
+    <!--box start-->
+    <article>
+        <h1>ENERGY USAGE SAVINGS</h1>
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td height="44" colspan="6" align="left" valign="top" class="heading">1. Compute the total power (kilowatts, kW) saved by upgrading FLUORESCENT lights to energy saving LED tubes</td>
+          </tr>
+          <tr style="background:#CCCCCC;">
+            <td width="16%" height="40">Original <br>
+            Lamp Wattage</td>
+            <td width="17%">Replacement <br>
+            Lamp Wattage</td>
+            <td width="17%">Watts Saved <br>
+            per Lamp</td>
+            <td width="18%"># of Lamps <br>
+            per Lamp</td>
+            <td width="23%">Total Watts <br>
+            Saved </td>
+            <td width="9%">Total Kilowatts <br>
+            Saved</td>
+          </tr>
+          <tr>
+            <td height="40"><input type="text" name="original_lamp_wattage" id="original_lamp_wattage" value="100" style="width:80px; height:30px;">
+            w<span>-</span></td>
+            <td><input type="text" name="replacement_lamp_wattage" id="replacement_lamp_wattage" value="10" style="width:80px; height:30px;">
+            w<span>=</span></td>
+            <td><input type="text" name="watt_saved_per_lamp" id="watt_saved_per_lamp" value="90" style="width:80px; height:30px;" readonly="readonly">
+            w<span>x</span></td>
+			<td><input type="text" name="of_lamps_to_replace" id="of_lamps_to_replace" value="50" style="width:80px; height:30px;">
+			lamps<span>=</span></td>
+			<td><input type="text" name="total_watt_saved" id="total_watt_saved" value="4500" style="width:80px; height:30px;" readonly="readonly">
+			watts/1000<span>=</span></td>
+			<td><input type="text" name="total_kiowatt_save" id="total_kiowatt_save" value="4.5" style="width:80px; height:30px;" class="bgRed" readonly="readonly"></td>
+          </tr>
+          
+          <tr>
+            <td height="41" colspan="6" align="left" valign="top" class="heading">2. Compute the total energy (kilowatt hours, kWh) saved annually by performing this upgrade </td>
+          </tr>
+          <tr>
+            <td height="39" colspan="6" align="center" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="2">
+              
+              <tr style="background:#CCCCCC;">
+                <td width="19%" height="40">Total Kilowatts<br>
+                Saved</td>
+                <td width="21%">Hours of Use <br>
+                per Days</td>
+                <td width="20%">Days of Use <br>
+                per Week</td>
+                <td width="21%">Week of Use <br>
+                per Year</td>
+                <td width="19%">Total kWh <br>
+                Saved per Year </td>
+              </tr>
+              <tr>
+                <td height="40"><input type="text" name="total_kiowatt_saves" id="total_kiowatt_saves" value="4.5" style="width:80px; height:30px;" readonly="readonly">
+                  kW<span>x</span></td>
+                <td><input type="text" name="hour_use_per_day" id="hour_use_per_day" value="16" style="width:80px; height:30px;">
+                  hrs/day<span>x</span></td>
+                <td><input type="text" name="day_of_use_per_week" id="day_of_use_per_week" value="6" style="width:80px; height:30px;">
+                  days/wk<span>x</span></td>
+                <td><input type="text" name="week_of_use_per_year" id="week_of_use_per_year" value="52" style="width:80px; height:30px;">
+                  wks/yr<span>=</span></td>
+                <td><input type="text" name="total_kilowatt_save_per_year" id="total_kilowatt_save_per_year" value="22464" style="width:80px; height:30px;" class="bgRed" readonly="readonly">
+                  kWh/Yr</td>
+              </tr>
+            </table></td>
+          </tr>
+          
+          <tr>
+            <td height="43" colspan="6" align="left" valign="top" class="heading">3. Compute the total energy cost savings per year</td>
+          </tr>
+          <tr>
+            <td height="43" colspan="6" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="2">
+              <tr style="background:#CCCCCC;">
+                <td width="24%" height="39">Total kWh<br>
+                  Saved per Year</td>
+                <td width="38%">Your Energy Cost<br>
+                  per kWh (Based on your power bill)</td>
+                <td width="38%">Total Energy Cost<br>
+                  Savings per Year</td>
+              </tr>
+              <tr>
+                <td height="39"><input type="text" name="total_kilowatt_save_per_years" id="total_kilowatt_save_per_years" value="22464" style="width:80px; height:30px;" readonly="readonly">
+                wks/yr<span>x</span></td>
+                <td>$
+                  <input type="text" name="energy_cost_per_kilowatt" id="energy_cost_per_kilowatt" value=".38" style="width:80px; height:30px;">
+                  wks/yr<span>=</span></td>
+                <td>$
+                  <input type="text" name="total_energy_cost_save_per_year" id="total_energy_cost_save_per_year" value="8536.32" style="width:80px; height:30px;" class="bgRed" readonly="readonly">
+                  wks/yr</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>       
+    </article>
+    <!--box close-->
+    <!--box start-->
+    <article>
+      <h1>BULB COST SAVINGS</h1>
+		
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr style="font-weight:bold;">
+          <td width="15%" height="43">BULB COST</td>
+          <td width="24%">LED lifespan (hrs)</td>
+          <td width="16%"><input type="text" name="led_life_span" id="led_life_span" value="50000" style="width:80px; height:30px;"></td>
+          <td width="45%">Your Yearly Usage</td>
+        </tr>
+        <tr style="font-weight:bold;">
+          <td height="43">&nbsp;</td>
+          <td>Original Bulb lifespan (hrs)</td>
+          <td><input type="text" name="original_bulb_life_span" id="original_bulb_life_span" value="5000" style="width:80px; height:30px;"></td>
+          <td><input type="text" name="your_early_usage" id="your_early_usage" value="4992" style="width:80px; height:30px;" class="bgRed" readonly="readonly">
+          hrs/year</td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+          <td width="3%" height="39">&nbsp;</td>
+          <td width="20%">&nbsp;</td>
+          <td width="19%">Price per bulb</td>
+          <td width="19%"># Bulbs for 10 yrs</td>
+          <td width="15%"># of Bulbs</td>
+          <td width="24%">Cost of Bulbs for 10 yrs</td>
+        </tr>
+        <tr>
+          <td height="39">&nbsp;</td>
+          <td>Cost of LED Bulbs</td>
+          <td>$
+            <input type="text" name="cost_of_led_bulb" id="cost_of_led_bulb" value="40" style="width:80px; height:30px;">
+          <span>x</span></td>
+          <td><input type="text" name="no_of_led_bulb_for_ten_year" id="no_of_led_bulb_for_ten_year" value="0.9984" style="width:80px; height:30px;" readonly="readonly">
+          <span>x</span></td>
+          <td><input type="text" name="no_of_bulb" id="no_of_bulb" value="50" style="width:80px; height:30px;" readonly="readonly">
+          <span>=</span></td>
+          <td>$
+          <input type="text" name="cost_of_led_bulb_for_ten_year" id="cost_of_led_bulb_for_ten_year" value="1996.8" style="width:80px; height:30px;" class="bgRed" readonly="readonly"></td>
+        </tr>
+        <tr>
+          <td height="41">&nbsp;</td>
+          <td>Cost of Original Bulbs</td>
+          <td>$
+            <input type="text" name="Cost_of_Original_Bulbs"  id="Cost_of_Original_Bulbs" value="17"style="width:80px; height:30px;">
+          <span>x</span></td>
+          <td><input type="text" name="no_of_Original_Bulbs_bulb_for_ten_year" id="no_of_Original_Bulbs_bulb_for_ten_year" value="9.984" style="width:80px; height:30px;" readonly="readonly"></td>
+          <td><span>=</span></td>
+          <td>$
+            <input type="text" name="cost_of_original_bulb_for_ten_year" id="cost_of_original_bulb_for_ten_year" value="8468.4" style="width:80px; height:30px;" class="bgRed" readonly="readonly"></td>
+        </tr>
+      </table>
+    </article>
+    <article>
+      <h1>YOUR TOTAL SAVINGS</h1>
+        <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td width="27%" height="39">Simple Payback<span>=</span></td>
+            <td width="32%" style="border-bottom:1px solid #000000">Initial Cost of Lighting Upgrade</td>
+            <td width="16%" style="border-bottom:1px solid #000000">$
+              <input type="text" name="Initial_Cost_of_Lighting_Upgrade" id="Initial_Cost_of_Lighting_Upgrade" value="2000" style="width:80px; height:30px;" readonly="readonly">
+            <span>=</span></td>
+            <td width="25%">RETURN ON INVESTMENT</td>
+          </tr>
+          <tr>
+            <td height="42">&nbsp;</td>
+            <td>Total Energy Cost Savings per Year</td>
+            <td>$
+              <input type="text" name="total_energy_cost_saving_per_year" id="total_energy_cost_saving_per_year" value="9185.28" style="width:80px; height:30px;" class="bgRed" readonly="readonly"></td>
+            <td><input type="text" name="return_on_investment" id="return_on_investment" value="0.217739688" style="width:90px; height:30px;" class="bgRed" readonly="readonly"> 
+              years </td>
+          </tr>
+          <tr>
+            <td height="42">OVERALL SAVINGS / YEAR<span>=</span></td>
+            <td>SAVINGS FROM USAGE</td>
+            <td>$
+              <input type="text" name="saving_form_usage" id="saving_form_usage" value="8536.32" style="width:80px; height:30px;" readonly="readonly" class="bgRed"></td>
+            <td rowspan="2" align="left" valign="middle">Yearly Saving <label style="font-size:1.5em;">=</label>            $
+            <input type="text" name="yearly_saving" id="yearly_saving" value="9185.28" style="width:80px; height:30px;" class="bgRed" readonly="readonly"></td>
+          </tr>
+          <tr>
+            <td height="42">&nbsp;</td>
+            <td>SAVINGS FROM BULB COST/YR</td>
+            <td>$
+              <input type="text" name="saving_from_per_bulb_cost_per_year" id="saving_from_per_bulb_cost_per_year" value="648.96" style="width:80px; height:30px;" readonly="readonly"  class="bgRed"></td>
+          </tr>
+        </table>
+    </article>
+    <article class="gallery">
+      <div style="position:relative;">
+	  <ul>
+        <li><img src="images/rod.png" border="0"></li>
+        <li><img src="images/bulb.png" border="0"></li>
+        <li><img src="images/cfl.png" border="0"></li>
+        <li><img src="images/bulb-2.png" border="0"></li>
+		<li><img src="images/dollar-bulb.jpg" border="0"></li>
+        <div class="clear"></div>
+      </ul>
+	  </div>
+    </article>
+	<div style="height:150px;"></div>
+    <!--photo gallery close-->
+  </div>
+  <!--contener close-->
+  <!--footer start-->
+  <footer></footer>
+  <!--footer close-->
+</div>
+</body>
+</html>

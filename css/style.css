@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+ font-family: 'MyriadProCondRegular';
+ src: url('../Fonts/myriadpro-cond-webfont.eot');
+ src: url('../Fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),  url('../Fonts/myriadpro-cond-webfont.woff') format('woff'),  url('../Fonts/myriadpro-cond-webfont.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'MyriadProSemiCondRegular';
+ src: url('../Fonts/myriadpro-semicn-webfont.eot');
+ src: url('../Fonts/myriadpro-semicn-webfont.eot?#iefix') format('embedded-opentype'),  url('../Fonts/myriadpro-semicn-webfont.woff') format('woff'),  url('myriadpro-semicn-webfont.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'MyriadProCondRegular';
+	background:url(../images/bgTop.png) center top no-repeat, url(../images/bgBottom.png) center bottom no-repeat, url(../images/bgMiddle2.png) center repeat-y;
+}
+header {
+	width:100%;
+	height:auto;
+}
+article {
+	margin:0px;
+	padding:0px;
+}
+header article {
+	text-align:center;
+	border:none;
+	background:none;
+	margin:23px 0;
+	padding:0px;
+}
+header article .topHd {
+	color: #2DEE09;
+	font-size: 50px;
+	text-shadow: 1px 2px 4px #494949;
+}
+footer {
+	width:100%;
+	height:auto;
+	min-height:100px;
+}
+.contenerMain .gallery {
+	border:none;
+	background:none;
+	box-shadow:none;
+	padding:0px;
+	margin:0px;
+}
+.contenerMain .gallery ul {
+position: absolute;
+margin: 0px;
+list-style: none;
+padding: 0px;
+text-align: center;
+}
+.contenerMain .gallery ul li {
+width: auto;
+float: left;
+padding: 0px;
+margin: 0 10;
+}
+.contenerMain .gallery ul li img {
+    height: 145px;
+    width: 187px;
+}
+h1 {
+	margin:10px 0;
+	padding:0px;
+	color:#156305;
+	text-align:center;
+	font-size:48px;
+}
+.clear {
+	clear:both;
+}
+.main {
+	width:auto;
+	margin:auto;
+	height:auto;
+	min-height:500px;
+	padding:1% 1%;
+}
+.topBox {
+	border: 3px solid #09D6E0;
+	background:url(../images/box-bg.png) left top repeat;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 2px 0 2px #09D6E0;
+	color: #FBE105;
+	font-size: 29px;
+	line-height: 39px;
+	margin: auto;
+	padding: 1%;
+	width: 52%;
+}
+.contenerMain {
+	width:auto;
+	height:auto;
+	min-height:350px;
+}
+.contenerMain article {
+    background: none repeat scroll 0 0 #FDFDFD;
+    border: 7px solid #2B2D2C;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: -1px -1px 2px 1px #2B2D2C inset;
+    color: #2B2D2D;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 15px 0 2px;
+    padding: 20px 30px;
+    text-align: justify;
+    width: auto;
+}
+input[type="text"], input[type="password"], input[type="file"] {
+    border: 1px solid #96A6C5;
+    border-radius: 2px 2px 2px 2px;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 13px;
+    margin-top: 4px;
+    padding: 3px 5px;
+}
+input[type="text"]:hover, input[type="password"]:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #A0A0A0 #B9B9B9 #B9B9B9;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #0288BB;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    outline: medium none;
+}
+/*-----my css-----*/
+.table-div {
+width: 100%;
+float: left;
+clear: both;
+}
+ul.ul-red-line {
+padding: 0;
+list-style: none;
+}
+ul.coloured-line {
+padding: 0;
+list-style: none;
+}
+ul.coloured-line li {
+float: left;
+width: 150px;
+margin: 0 2;
+}
+ul.coloured-line li input {
+width: 108px;
+float: left;
+}
+.coloured-line p {
+font-size: 16px;
+float: left;
+width: 95px;
+padding: 0 20;
+background-color:#cccccc;
+}
+.coloured-line em {
+float: left;
+width: 74%;
+}
+.simple ul {
+padding: 0;
+list-style: none;
+}
+.simple ul li {
+float: left;
+width: 240px;
+}
+.savings ul {
+padding: 0;
+list-style: none;
+}
+.savings ul li {
+float: left;
+width: 190px;
+}
+.savings ul li input {
+float: none;
+width: 100px;
+}
+.secondlast ul {
+padding: 0;
+list-style: none;
+}
+.secondlast ul li {
+float: left;
+width: 234px;
+font-size: 18px;
+}
+.secondlast ul li p {
+width: 167px;
+}
+.secondlast ul li input {
+width: 77px;
+padding: 5 4;
+}
+p.over {
+padding: 0;
+width: 235px !important;
+}
+.extra {
+margin-left: 10px;
+}
